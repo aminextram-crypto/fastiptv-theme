@@ -49,9 +49,9 @@ if ( ! defined( 'ABSPATH' ) ) {
             <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-6">UNTERNEHMEN</h4>
             <nav class="space-y-1">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Startseite</a>
-                <a href="/pricing-page" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Tarife</a>
-                <a href="/free-trial" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Kostenloser 24h Test</a>
-                <a href="/blog" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Blog</a>
+                <a href="https://iptv.playxtram.store/iptv-tarife-germany/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Tarife</a>
+                <a href="https://iptv.playxtram.store/24h-iptv-kostenlos-testen-premium-testzugang/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Kostenloser 24h Test</a>
+                <a href="https://iptv.playxtram.store/blog/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Blog</a>
                 <a href="/about" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Über uns</a>
                 <a href="/reseller" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Reseller</a>
             </nav>
@@ -61,9 +61,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div>
             <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-6">SUPPORT</h4>
             <nav class="space-y-1">
-                <a href="/contact" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Kontakt</a>
-                <a href="/installation" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Installationsanleitung</a>
-                <a href="/faq" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">FAQ</a>
+                <a href="https://iptv.playxtram.store/kontakt-support-premium-iptv-kundenservice/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Kontakt</a>
+                <a href="https://iptv.playxtram.store/installationsanleitung/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Installationsanleitung</a>
+                <a href="https://iptv.playxtram.store/iptv-faq-hilfe-haufig-gestellte-fragen/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">FAQ</a>
                 <a href="/help-center" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Hilfe-Center</a>
             </nav>
         </div>
@@ -72,11 +72,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div>
             <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-6">RECHTLICHES</h4>
             <nav class="space-y-1">
-                <a href="/dmca" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">DMCA-Hinweis</a>
-                <a href="/terms" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">AGB</a>
-                <a href="/privacy" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Datenschutz</a>
-                <a href="/refund" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Rückerstattungsrichtlinie</a>
-                <a href="/disclaimer" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Haftungsausschluss</a>
+                <a href="https://iptv.playxtram.store/dmca-hinweis/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">DMCA-Hinweis</a>
+                <a href="https://iptv.playxtram.store/agb-nutzungsbedingungen-premium-iptv/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">AGB</a>
+                <a href="https://iptv.playxtram.store/datenschutzerklarung-sicherheit-fur-ihre-daten/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Datenschutz</a>
+                <a href="https://iptv.playxtram.store/geld-zuruck-garantie-ruckerstattung-premium-iptv/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Rückerstattungsrichtlinie</a>
+                <a href="https://iptv.playxtram.store/haftungsausschluss-disclaimer-premium-iptv/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Haftungsausschluss</a>
             </nav>
         </div>
 
@@ -85,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!-- Bottom Disclaimer Bar -->
     <div class="border-t border-gray-800 mt-12 py-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 gap-4 text-center md:text-left">
         <div id="dmca" class="scroll-mt-24">
-            FASTIPTV hostet keine urheberrechtlich geschützten Inhalte. Alle Inhalte werden von Drittanbietern bereitgestellt. <a href="/dmca" class="hover:text-gray-400 underline ml-1">DMCA-Richtlinie lesen</a>
+            FASTIPTV hostet keine urheberrechtlich geschützten Inhalte. Alle Inhalte werden von Drittanbietern bereitgestellt. <a href="https://iptv.playxtram.store/dmca-hinweis/" class="hover:text-gray-400 underline ml-1">DMCA-Richtlinie lesen</a>
         </div>
         <div class="whitespace-nowrap">
             &copy; 2026 FASTIPTV Deutschland. Alle Rechte vorbehalten.

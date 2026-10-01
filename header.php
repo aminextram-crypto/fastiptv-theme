@@ -58,12 +58,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php
 $current_page_uri       = isset( $_SERVER['REQUEST_URI'] ) ? parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ) : '';
-$is_pricing_active      = in_array( $current_page_uri, array( '/pricing', '/pricing-page', '/pricing-page.php', '/page-pricing.php', '/tarife', '/preise' ), true );
-$is_installation_active = in_array( $current_page_uri, array( '/installation', '/installation.php', '/page-installation.php', '/installation-page', '/installation-page.php', '/anleitung' ), true );
-$is_blog_active         = in_array( $current_page_uri, array( '/blog', '/blog.php', '/page-blog.php' ), true );
-$is_dmca_active         = in_array( $current_page_uri, array( '/dmca', '/dmca.php', '/page-dmca.php', '/dmca-page', '/dmca-page.php' ), true );
-$is_contact_active      = in_array( $current_page_uri, array( '/contact', '/contact.php', '/page-contact.php', '/contact-us' ), true );
-$is_faq_active          = in_array( $current_page_uri, array( '/faq', '/faq.php', '/page-faq.php', '/faq-page', '/faq-page.php' ), true );
+$is_pricing_active      = in_array( $current_page_uri, array( '/pricing', '/pricing-page', '/pricing-page.php', '/page-pricing.php', '/tarife', '/preise', '/iptv-tarife-germany', '/iptv-tarife-germany/' ), true );
+$is_installation_active = in_array( $current_page_uri, array( '/installation', '/installation.php', '/page-installation.php', '/installation-page', '/installation-page.php', '/anleitung', '/installationsanleitung', '/installationsanleitung/' ), true );
+$is_blog_active         = in_array( $current_page_uri, array( '/blog', '/blog.php', '/page-blog.php', '/blog/' ), true );
+$is_dmca_active         = in_array( $current_page_uri, array( '/dmca', '/dmca.php', '/page-dmca.php', '/dmca-page', '/dmca-page.php', '/dmca-hinweis', '/dmca-hinweis/' ), true );
+$is_contact_active      = in_array( $current_page_uri, array( '/contact', '/contact.php', '/page-contact.php', '/contact-us', '/kontakt-support-premium-iptv-kundenservice', '/kontakt-support-premium-iptv-kundenservice/' ), true );
+$is_faq_active          = in_array( $current_page_uri, array( '/faq', '/faq.php', '/page-faq.php', '/faq-page', '/faq-page.php', '/iptv-faq-hilfe-haufig-gestellte-fragen', '/iptv-faq-hilfe-haufig-gestellte-fragen/' ), true );
 ?>
 <!-- 2. DARK NAVBAR -->
 <header id="masthead" class="site-header bg-[#000000] border-b border-gray-800 sticky top-0 z-50 shadow-md">
@@ -83,17 +83,17 @@ $is_faq_active          = in_array( $current_page_uri, array( '/faq', '/faq.php'
 
         <!-- Centered Navigation Links (font-medium, text-white) -->
         <nav id="site-navigation" class="hidden md:flex items-center space-x-5 lg:space-x-7 text-sm font-medium">
-            <a href="/pricing-page" class="<?php echo $is_pricing_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">Tarife</a>
-            <a href="/installation" class="<?php echo $is_installation_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">Installationsanleitung</a>
-            <a href="/blog" class="<?php echo $is_blog_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">Blog</a>
-            <a href="/dmca" class="<?php echo $is_dmca_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">DMCA-Hinweis</a>
-            <a href="/contact" class="<?php echo $is_contact_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">Kontakt</a>
-            <a href="/faq" class="<?php echo $is_faq_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">FAQ</a>
+            <a href="https://iptv.playxtram.store/iptv-tarife-germany/" class="<?php echo $is_pricing_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">Tarife</a>
+            <a href="https://iptv.playxtram.store/installationsanleitung/" class="<?php echo $is_installation_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">Installationsanleitung</a>
+            <a href="https://iptv.playxtram.store/blog/" class="<?php echo $is_blog_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">Blog</a>
+            <a href="https://iptv.playxtram.store/dmca-hinweis/" class="<?php echo $is_dmca_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">DMCA-Hinweis</a>
+            <a href="https://iptv.playxtram.store/kontakt-support-premium-iptv-kundenservice/" class="<?php echo $is_contact_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">Kontakt</a>
+            <a href="https://iptv.playxtram.store/iptv-faq-hilfe-haufig-gestellte-fragen/" class="<?php echo $is_faq_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> transition-colors">FAQ</a>
         </nav>
 
         <!-- Right Side: CTA Button & Mobile Menu Toggle -->
         <div class="flex items-center space-x-3 sm:space-x-4">
-            <a href="/free-trial" class="inline-flex items-center justify-center px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-medium text-white bg-[#DD0000] hover:bg-[#b80000] shadow-sm transition-all whitespace-nowrap">
+            <a href="https://iptv.playxtram.store/24h-iptv-kostenlos-testen-premium-testzugang/" class="inline-flex items-center justify-center px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-medium text-white bg-[#DD0000] hover:bg-[#b80000] shadow-sm transition-all whitespace-nowrap">
                 Kostenlos Testen
             </a>
 
@@ -108,12 +108,12 @@ $is_faq_active          = in_array( $current_page_uri, array( '/faq', '/faq.php'
 
     <!-- Mobile Navigation Drawer -->
     <div id="mobile-menu" class="hidden md:hidden bg-black/95 border-b border-gray-800 px-6 pt-2 pb-6 space-y-3 font-medium text-sm text-white">
-        <a href="/pricing-page" class="block py-2.5 <?php echo $is_pricing_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">Tarife</a>
-        <a href="/installation" class="block py-2.5 <?php echo $is_installation_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">Installationsanleitung</a>
-        <a href="/blog" class="block py-2.5 <?php echo $is_blog_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">Blog</a>
-        <a href="/dmca" class="block py-2.5 <?php echo $is_dmca_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">DMCA-Hinweis</a>
-        <a href="/contact" class="block py-2.5 <?php echo $is_contact_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">Kontakt</a>
-        <a href="/faq" class="block py-2.5 <?php echo $is_faq_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">FAQ</a>
+        <a href="https://iptv.playxtram.store/iptv-tarife-germany/" class="block py-2.5 <?php echo $is_pricing_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">Tarife</a>
+        <a href="https://iptv.playxtram.store/installationsanleitung/" class="block py-2.5 <?php echo $is_installation_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">Installationsanleitung</a>
+        <a href="https://iptv.playxtram.store/blog/" class="block py-2.5 <?php echo $is_blog_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">Blog</a>
+        <a href="https://iptv.playxtram.store/dmca-hinweis/" class="block py-2.5 <?php echo $is_dmca_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">DMCA-Hinweis</a>
+        <a href="https://iptv.playxtram.store/kontakt-support-premium-iptv-kundenservice/" class="block py-2.5 <?php echo $is_contact_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">Kontakt</a>
+        <a href="https://iptv.playxtram.store/iptv-faq-hilfe-haufig-gestellte-fragen/" class="block py-2.5 <?php echo $is_faq_active ? 'text-[#DD0000] font-semibold' : 'text-white hover:text-[#DD0000]'; ?> border-b border-gray-900 transition-colors">FAQ</a>
     </div>
 </header>
 
