@@ -1066,7 +1066,7 @@ get_header();
                         <td class="p-5 bg-[#1a1a1a] border-x border-gray-800 text-white font-bold text-base">
                             <div class="flex items-center gap-2.5">
                                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                                <span class="text-white font-bold text-base">Ab 6,25 € / Monat</span>
+                                <span class="text-white font-bold text-base">Ab 29 € / 3 Monate</span>
                             </div>
                         </td>
                         <td class="p-5 text-gray-300 font-medium">50 € bis 95 € / Monat</td>
@@ -1849,7 +1849,7 @@ get_header();
                 <div class="bg-white p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 max-w-md">
                     <div>
                         <span class="block text-sm text-gray-500 mb-0.5">Jetzt streamen ab</span>
-                        <div class="text-3xl font-black text-gray-900 tracking-tight">6,25 € <span class="text-sm font-semibold text-gray-500">/ Monat</span></div>
+                        <div class="text-3xl font-black text-gray-900 tracking-tight">29 € <span class="text-sm font-semibold text-gray-500">/ 3 Monate</span></div>
                     </div>
                     <a href="/pricing-page" class="inline-flex items-center justify-center bg-[#DD0000] hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-colors whitespace-nowrap shadow-md hover:shadow-lg">
                         TARIFE WÄHLEN
