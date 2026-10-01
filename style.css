@@ -1,0 +1,48 @@
+/*
+Theme Name: Fast IPTV Store
+Theme URI: https://example.com/fast-iptv-store
+Author: Admin
+Author URI: https://example.com
+Description: A highly optimized, ultra-fast custom WordPress theme with clean modern typography (Inter) and German (DE) Flag-inspired color palette (Black, Red #DD0000, Gold #FFCE00).
+Version: 1.2
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fast-iptv-store
+*/
+
+/**
+ * German (DE) Brand Color Palette CSS Custom Properties
+ */
+:root {
+  --de-red: #DD0000;         /* Primary Action Color */
+  --de-gold: #FFCE00;        /* Secondary Accent / Highlights */
+  --de-black: #000000;       /* Headings & Strong Accents */
+  --brand-primary: #DD0000;
+  --brand-secondary: #FFCE00;
+  --main-bg: #FFFFFF;        /* Main Clean White Background */
+  --alt-bg: #F8F9FA;         /* Alternate Section Background */
+  --main-text: #374151;      /* Refined Neutral Gray Body Text (gray-700) */
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clean, modern headings: font-weight 600 (semibold) */
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
