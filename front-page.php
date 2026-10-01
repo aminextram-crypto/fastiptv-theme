@@ -1178,7 +1178,7 @@ get_header();
             <!-- Card 1 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/assets/images/feature-family-tv.jpg' ) : 'assets/images/feature-family-tv.jpg'; ?>" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-family-tv.jpg" 
                          alt="Premium IPTV Deutschland" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1208,7 +1208,7 @@ get_header();
             <!-- Card 2 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/assets/images/feature-cinema.jpg' ) : 'assets/images/feature-cinema.jpg'; ?>" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-cinema.jpg" 
                          alt="Filme & Serien auf Abruf" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1243,7 +1243,7 @@ get_header();
             <!-- Card 3 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/assets/images/feature-football.jpg' ) : 'assets/images/feature-football.jpg'; ?>" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-football.jpg" 
                          alt="25.000+ Live-Sender" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1273,7 +1273,7 @@ get_header();
             <!-- Card 4 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/assets/images/feature-fans.jpg' ) : 'assets/images/feature-fans.jpg'; ?>" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-fans.jpg" 
                          alt="Live-Sport & Bundesliga" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1306,7 +1306,7 @@ get_header();
             <!-- Card 5 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/assets/images/feature-smart-tv.jpg' ) : 'assets/images/feature-smart-tv.jpg'; ?>" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-smart-tv.jpg" 
                          alt="Einfache Einrichtung" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1336,7 +1336,7 @@ get_header();
             <!-- Card 6 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/assets/images/feature-support.jpg' ) : 'assets/images/feature-support.jpg'; ?>" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-support.jpg" 
                          alt="24/7 Premium Support" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1667,7 +1667,7 @@ get_header();
 
     <!-- Left Background Image -->
     <div class="absolute top-0 left-0 w-full md:w-1/2 h-full z-0">
-        <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/image_7541fb.jpg' ) : 'image_7541fb.jpg'; ?>" 
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_7541fb.jpg" 
              alt="Deutsche Nationalmannschaft" 
              class="w-full h-full object-cover opacity-30 object-left" 
              loading="lazy">
@@ -1676,7 +1676,7 @@ get_header();
 
     <!-- Right Background Image -->
     <div class="absolute top-0 right-0 w-full md:w-1/2 h-full z-0">
-        <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/image_753d62.jpg' ) : 'image_753d62.jpg'; ?>" 
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_753d62.jpg" 
              alt="WM Torjubel" 
              class="w-full h-full object-cover opacity-30 object-right" 
              loading="lazy">
@@ -1859,7 +1859,7 @@ get_header();
 
             <!-- Right Column (Clean Floating Transparent PNG - Desktop Only) -->
             <div class="hidden lg:flex relative items-center justify-center">
-                <img src="<?php echo function_exists( 'get_template_directory_uri' ) && get_template_directory_uri() ? esc_url( get_template_directory_uri() . '/your-transparent-sports-image.png' ) : 'your-transparent-sports-image.png'; ?>" 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/your-transparent-sports-image.png" 
                      alt="Live Sports" 
                      class="hidden lg:block relative z-10 w-full max-w-2xl scale-110 mx-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
             </div>

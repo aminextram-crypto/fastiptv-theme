@@ -87,7 +87,7 @@ get_header();
             <!-- Right Column: Transparent PNG Floating Composition -->
             <div class="lg:col-span-5 flex justify-center items-center relative">
                 <div class="relative w-full max-w-lg lg:max-w-none animate-float animate-[float_6s_ease-in-out_infinite]">
-                    <img src="/trial-hero-devices.png" alt="IPTV 24 Stunden Testzugang auf Smart TV und Smartphone" class="w-full h-auto object-contain drop-shadow-2xl" loading="eager" width="600" height="600">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trial-hero-devices.png" alt="IPTV 24 Stunden Testzugang auf Smart TV und Smartphone" class="w-full h-auto object-contain drop-shadow-2xl" loading="eager" width="600" height="600">
                 </div>
             </div>
 
@@ -283,7 +283,7 @@ get_header();
 <!-- 4. MID-PAGE VISUAL (Large Centered Realistic Mockup) -->
 <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 my-12 md:my-20 font-sans">
     <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-white group">
-        <img src="/trial-devices-mockup.jpg" alt="IPTV Multi-Device Streaming Setup: Smart TV, Laptop und Smartphone" class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-700" loading="lazy" width="1280" height="720">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trial-devices-mockup.jpg" alt="IPTV Multi-Device Streaming Setup: Smart TV, Laptop und Smartphone" class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-700" loading="lazy" width="1280" height="720">
     </div>
 </section>
 

@@ -119,6 +119,12 @@ if ( ! function_exists( 'get_footer' ) ) {
     }
 }
 
+if ( ! function_exists( 'get_template_directory_uri' ) ) {
+    function get_template_directory_uri() {
+        return '';
+    }
+}
+
 // Route pricing templates
 if ( in_array( $request_uri, [ '/pricing', '/tarife', '/preise', '/pricing-page', '/pricing-page.php', '/page-pricing.php' ], true ) ) {
     require __DIR__ . '/page-pricing.php';
