@@ -69,15 +69,10 @@ $is_faq_active          = in_array( $current_page_uri, array( '/faq', '/faq.php'
 <header id="masthead" class="site-header bg-[#000000] border-b border-gray-800 sticky top-0 z-50 shadow-md">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
-        <!-- Logo (Reduced to font-bold, white text) -->
+        <!-- Logo -->
         <div class="site-branding flex items-center">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="flex items-center gap-2.5 text-2xl font-bold text-white tracking-tight">
-                <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#DD0000] text-white shadow-sm font-semibold">
-                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                    </svg>
-                </span>
-                <span>FAST<span class="text-[#DD0000]">IPTV</span></span>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="flex items-center">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="DEUTSCH KAUFEN IPTV" class="h-7 sm:h-8 md:h-9 w-auto object-contain">
             </a>
         </div>
 

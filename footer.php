@@ -25,10 +25,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         
         <!-- Column 1: Brand (col-span-2) -->
         <div class="col-span-1 md:col-span-2 lg:col-span-2">
-            <!-- FASTIPTV Logo -->
-            <div class="flex items-center gap-2.5 mb-5">
-                <span class="text-2xl font-black text-white tracking-tight">FAST<span class="text-[#DD0000]">IPTV</span></span>
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-[#DD0000]/20 text-[#DD0000] border border-[#DD0000]/30 uppercase tracking-widest">DE</span>
+            <!-- Logo -->
+            <div class="mb-5">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="inline-block">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="DEUTSCH KAUFEN IPTV" class="h-9 sm:h-10 md:h-11 w-auto object-contain">
+                </a>
             </div>
             
             <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
