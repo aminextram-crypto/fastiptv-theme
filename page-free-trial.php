@@ -415,7 +415,7 @@ get_header();
 
         <!-- Header -->
         <div class="text-center mb-6">
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-red-100 text-[#DD0000] uppercase tracking-wider mb-2">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-black text-white uppercase tracking-wider mb-2">
                 24H TESTZUGANG
             </span>
             <h3 class="text-2xl font-extrabold text-gray-900">
@@ -427,19 +427,22 @@ get_header();
         </div>
 
         <!-- Form -->
-        <form onsubmit="handleTrialSubmit(event)" class="space-y-4">
+        <form id="trial-form" onsubmit="handleTrialSubmit(event)" class="space-y-4">
             <div>
-                <label for="trial-email" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
-                    E-Mail-Adresse <span class="text-[#DD0000]">*</span>
+                <label for="trial-whatsapp" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
+                    WHATSAPP-NUMMER <span class="text-black">*</span>
                 </label>
-                <input type="email" id="trial-email" required placeholder="ihre-email@beispiel.de" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#DD0000] focus:border-transparent">
+                <input type="tel" id="trial-whatsapp" required placeholder="+49 151 ..." class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-black focus:border-black bg-white">
+                <div id="trial-error-msg" class="hidden text-xs text-red-600 font-medium mt-1.5">
+                    Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.
+                </div>
             </div>
 
             <div>
                 <label for="trial-device" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
-                    Ihr bevorzugtes Gerät <span class="text-[#DD0000]">*</span>
+                    Ihr bevorzugtes Gerät <span class="text-black">*</span>
                 </label>
-                <select id="trial-device" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#DD0000] focus:border-transparent bg-white">
+                <select id="trial-device" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-black focus:border-black bg-white">
                     <option value="firetv">Amazon Fire TV (Stick / Cube)</option>
                     <option value="smarttv">Smart TV (Samsung / LG / Hisense)</option>
                     <option value="androidtv">Android TV / Box (Nvidia Shield, Xiaomi)</option>
@@ -449,27 +452,18 @@ get_header();
                 </select>
             </div>
 
-            <button type="submit" class="w-full bg-[#DD0000] hover:bg-red-700 text-white font-bold py-3.5 px-6 rounded-lg transition-colors text-sm shadow-md flex items-center justify-center gap-2">
-                <span>Jetzt Testdaten erhalten</span>
+            <button type="submit" id="trial-submit-btn" class="w-full bg-black hover:bg-neutral-800 text-white font-bold py-3.5 px-6 rounded-lg transition-colors text-sm shadow-md flex items-center justify-center gap-2 cursor-pointer disabled:bg-neutral-600 disabled:cursor-not-allowed">
+                <span id="trial-submit-text">Jetzt Testdaten erhalten</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                 </svg>
             </button>
         </form>
 
-        <div id="trial-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm text-center">
-            <strong>Vielen Dank!</strong> Ihre Anfrage wurde registriert. Ihre Zugangsdaten werden in wenigen Minuten per E-Mail versendet.
-        </div>
-
-        <!-- WhatsApp Alternative -->
-        <div class="mt-6 pt-5 border-t border-gray-100 text-center">
-            <span class="text-xs text-gray-500 block mb-2">Oder noch schneller direkt per WhatsApp erhalten:</span>
-            <a href="https://wa.me/4915212345678?text=Hallo%20FASTIPTV,%20ich%20m%C3%B6chte%20einen%20kostenlosen%2024h%20Testzugang%20anfordern." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] transition-all w-full">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.777.879 2.796.879 3.182 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.768c0 5.485-4.464 9.949-9.969 9.949-1.749 0-3.385-.453-4.819-1.246l-5.212 1.357 1.385-5.068c-.902-1.499-1.423-3.253-1.423-5.022 0-5.484 4.464-9.95 9.969-9.95 5.505 0 9.969 4.466 9.969 9.982z"/>
-                </svg>
-                <span>Per WhatsApp anfordern</span>
-            </a>
+        <div id="trial-success" class="hidden mt-4 p-5 rounded-xl bg-neutral-50 border border-neutral-200 text-center space-y-2">
+            <div class="text-3xl">✅</div>
+            <div class="font-bold text-base text-gray-900">Erfolgreich!</div>
+            <div class="text-gray-600 text-xs sm:text-sm">Bitte überprüfen Sie Ihr WhatsApp. Ihre Testdaten werden in Kürze gesendet.</div>
         </div>
 
     </div>
@@ -484,6 +478,8 @@ function openTrialModal() {
         modal.classList.remove('opacity-0');
         content.classList.remove('scale-95');
         content.classList.add('scale-100');
+        const input = document.getElementById('trial-whatsapp');
+        if (input) input.focus();
     }, 10);
     document.body.style.overflow = 'hidden';
 }
@@ -502,10 +498,50 @@ function closeTrialModal() {
 
 function handleTrialSubmit(e) {
     e.preventDefault();
-    document.getElementById('trial-success').classList.remove('hidden');
-    setTimeout(function() {
-        closeTrialModal();
-    }, 3000);
+    
+    const whatsappInput = document.getElementById('trial-whatsapp');
+    const submitBtn = document.getElementById('trial-submit-btn');
+    const submitText = document.getElementById('trial-submit-text');
+    const errorMsg = document.getElementById('trial-error-msg');
+    const successBox = document.getElementById('trial-success');
+    const form = document.getElementById('trial-form');
+    
+    const whatsappValue = whatsappInput ? whatsappInput.value.trim() : '';
+    if (!whatsappValue) {
+        if (whatsappInput) whatsappInput.focus();
+        return;
+    }
+    
+    if (errorMsg) errorMsg.classList.add('hidden');
+    if (submitBtn) submitBtn.disabled = true;
+    if (submitText) submitText.textContent = 'Wird gesendet...';
+    
+    fetch('https://n8n.playxtram.store/webhook-test/free-trial-request', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json, text/plain, */*'
+        },
+        body: JSON.stringify({
+            whatsapp: whatsappValue
+        })
+    })
+    .then(function(response) {
+        if (!response.ok) {
+            throw new Error('Server returned status: ' + response.status);
+        }
+        return response.text();
+    })
+    .then(function() {
+        if (form) form.classList.add('hidden');
+        if (successBox) successBox.classList.remove('hidden');
+    })
+    .catch(function(err) {
+        console.error('Free trial submission error:', err);
+        if (errorMsg) errorMsg.classList.remove('hidden');
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitText) submitText.textContent = 'Jetzt Testdaten erhalten';
+    });
 }
 
 document.getElementById('trial-modal').addEventListener('click', function(e) {

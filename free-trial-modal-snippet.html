@@ -1,0 +1,467 @@
+<!-- ================================================================= -->
+<!-- FREE TRIAL POPUP MODAL (WordPress Custom HTML Block)              -->
+<!-- Style: Minimalist Monochrome (Black, White, Light Gray)           -->
+<!-- Webhook: https://n8n.playxtram.store/webhook-test/free-trial-request -->
+<!-- ================================================================= -->
+
+<style>
+    /* Scoped Styles for Free Trial Modal */
+    .ft-modal-wrap, .ft-modal-wrap * {
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* Trigger Button (Solid Black Monochrome) */
+    .ft-trigger-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #000000;
+        color: #ffffff !important;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        padding: 14px 28px;
+        border-radius: 10px;
+        border: 1px solid #000000;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+    .ft-trigger-btn:hover {
+        background-color: #222222;
+        border-color: #222222;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    }
+    .ft-trigger-btn:active {
+        transform: translateY(0);
+    }
+
+    /* Modal Overlay */
+    .ft-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: 999999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+    .ft-modal-overlay.ft-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Modal Box */
+    .ft-modal-card {
+        position: relative;
+        background: #ffffff;
+        width: 100%;
+        max-width: 480px;
+        border-radius: 20px;
+        padding: 36px 32px 32px;
+        box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.05);
+        transform: scale(0.94) translateY(8px);
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        text-align: left;
+    }
+    .ft-modal-overlay.ft-active .ft-modal-card {
+        transform: scale(1) translateY(0);
+    }
+
+    /* Close Button */
+    .ft-modal-close {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #f3f4f6;
+        border: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 20px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+        padding: 0;
+    }
+    .ft-modal-close:hover {
+        background: #000000;
+        border-color: #000000;
+        color: #ffffff;
+        transform: rotate(90deg);
+    }
+
+    /* Modal Header */
+    .ft-modal-header {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .ft-modal-badge {
+        display: inline-block;
+        background: #000000;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 9999px;
+        margin-bottom: 10px;
+    }
+    .ft-modal-title {
+        font-size: 24px;
+        font-weight: 800;
+        color: #111827;
+        letter-spacing: -0.025em;
+        line-height: 1.2;
+        margin: 0 0 6px 0;
+    }
+    .ft-modal-subtitle {
+        font-size: 13px;
+        color: #6b7280;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    /* Form Elements */
+    .ft-form-group {
+        margin-bottom: 18px;
+    }
+    .ft-form-label {
+        display: block;
+        font-size: 11px;
+        font-weight: 700;
+        color: #374151;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    .ft-form-label span {
+        color: #000000;
+    }
+    .ft-phone-input,
+    .ft-select-input {
+        width: 100%;
+        background: #ffffff;
+        border: 1.5px solid #d1d5db;
+        border-radius: 10px;
+        padding: 13px 15px;
+        font-size: 15px;
+        color: #111827;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .ft-phone-input::placeholder {
+        color: #9ca3af;
+    }
+    .ft-phone-input:focus,
+    .ft-select-input:focus {
+        border-color: #000000;
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+    }
+    .ft-phone-input.ft-input-error {
+        border-color: #dc2626;
+        background: #fffafa;
+    }
+
+    /* Submit Button (Solid Black CTA) */
+    .ft-submit-btn {
+        width: 100%;
+        background: #000000;
+        color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 14px 20px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        cursor: pointer;
+        transition: background-color 0.2s ease, opacity 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 6px;
+    }
+    .ft-submit-btn:hover:not(:disabled) {
+        background: #1f2937;
+        border-color: #1f2937;
+    }
+    .ft-submit-btn:disabled {
+        background: #4b5563;
+        border-color: #4b5563;
+        color: #d1d5db;
+        cursor: not-allowed;
+        opacity: 0.85;
+    }
+
+    /* Error Message */
+    .ft-error-msg {
+        color: #dc2626;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 6px;
+        display: none;
+    }
+
+    /* Success State */
+    .ft-success-box {
+        text-align: center;
+        padding: 16px 8px 10px;
+    }
+    .ft-success-icon {
+        font-size: 40px;
+        margin-bottom: 12px;
+        line-height: 1;
+    }
+    .ft-success-title {
+        font-size: 22px;
+        font-weight: 800;
+        color: #111827;
+        letter-spacing: -0.02em;
+        margin-bottom: 8px;
+    }
+    .ft-success-text {
+        font-size: 14px;
+        color: #4b5563;
+        line-height: 1.5;
+        margin-bottom: 22px;
+    }
+    .ft-success-close-btn {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 480px) {
+        .ft-modal-card {
+            padding: 28px 20px 22px;
+            border-radius: 16px;
+        }
+        .ft-modal-title {
+            font-size: 20px;
+        }
+        .ft-trigger-btn {
+            width: 100%;
+        }
+    }
+</style>
+
+<!-- Trigger Button -->
+<button type="button" class="ft-trigger-btn" id="ftOpenModalBtn">
+    <span>Jetzt Kostenlos Testen</span>
+</button>
+
+<!-- Modal Overlay & Box -->
+<div class="ft-modal-wrap">
+    <div class="ft-modal-overlay" id="ftModalOverlay" role="dialog" aria-modal="true" aria-labelledby="ftModalTitle">
+        <div class="ft-modal-card" id="ftModalCard">
+            <!-- Close Button -->
+            <button type="button" class="ft-modal-close" id="ftCloseModalBtn" aria-label="Schließen">
+                &times;
+            </button>
+
+            <!-- Modal Content -->
+            <div id="ftModalBody">
+                <div class="ft-modal-header">
+                    <span class="ft-modal-badge">24H TESTZUGANG</span>
+                    <h2 class="ft-modal-title" id="ftModalTitle">Kostenlosen Test anfordern</h2>
+                    <p class="ft-modal-subtitle">
+                        Keine Kreditkarte erforderlich • Automatischer Ablauf nach 24h
+                    </p>
+                </div>
+
+                <form id="ftTrialForm" novalidate>
+                    <!-- WhatsApp Number Input -->
+                    <div class="ft-form-group">
+                        <label for="ftWhatsappInput" class="ft-form-label">
+                            WHATSAPP-NUMMER <span>*</span>
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="ftWhatsappInput" 
+                            name="whatsapp" 
+                            class="ft-phone-input" 
+                            placeholder="+49 151 ..." 
+                            required 
+                            autocomplete="tel"
+                        />
+                        <div class="ft-error-msg" id="ftErrorMsg">
+                            Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.
+                        </div>
+                    </div>
+
+                    <!-- Preferred Device Dropdown -->
+                    <div class="ft-form-group">
+                        <label for="ftDeviceSelect" class="ft-form-label">
+                            IHR BEVORZUGTES GERÄT <span>*</span>
+                        </label>
+                        <select id="ftDeviceSelect" class="ft-select-input" required>
+                            <option value="firetv">Amazon Fire TV (Stick / Cube)</option>
+                            <option value="smarttv">Smart TV (Samsung / LG / Hisense)</option>
+                            <option value="androidtv">Android TV / Box (Nvidia Shield, Xiaomi)</option>
+                            <option value="apple">Apple iOS / Apple TV</option>
+                            <option value="pc">Windows PC / Mac OS</option>
+                            <option value="mag">MAG Box / Stalker Portal</option>
+                        </select>
+                    </div>
+
+                    <!-- Solid Black CTA Button -->
+                    <button type="submit" class="ft-submit-btn" id="ftSubmitBtn">
+                        <span id="ftSubmitText">Jetzt Testdaten erhalten</span>
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Vanilla JavaScript (Fetch API) -->
+<script>
+(function() {
+    const openBtn     = document.getElementById('ftOpenModalBtn');
+    const closeBtn    = document.getElementById('ftCloseModalBtn');
+    const overlay     = document.getElementById('ftModalOverlay');
+    const form        = document.getElementById('ftTrialForm');
+    const input       = document.getElementById('ftWhatsappInput');
+    const submitBtn   = document.getElementById('ftSubmitBtn');
+    const submitText  = document.getElementById('ftSubmitText');
+    const errorMsg    = document.getElementById('ftErrorMsg');
+    const modalBody   = document.getElementById('ftModalBody');
+
+    const WEBHOOK_URL = 'https://n8n.playxtram.store/webhook-test/free-trial-request';
+
+    function openModal() {
+        if (!overlay) return;
+        overlay.classList.add('ft-active');
+        document.body.style.overflow = 'hidden';
+        if (input) setTimeout(() => input.focus(), 150);
+    }
+
+    function closeModal() {
+        if (!overlay) return;
+        overlay.classList.remove('ft-active');
+        document.body.style.overflow = '';
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+    document.querySelectorAll('[data-open-trial-modal]').forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal();
+        });
+    });
+
+    if (overlay) {
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) closeModal();
+        });
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay && overlay.classList.contains('ft-active')) {
+            closeModal();
+        }
+    });
+
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const rawValue = input ? input.value.trim() : '';
+            if (!rawValue) {
+                if (input) {
+                    input.classList.add('ft-input-error');
+                    input.focus();
+                }
+                if (errorMsg) {
+                    errorMsg.textContent = 'Bitte geben Sie Ihre WhatsApp-Nummer ein.';
+                    errorMsg.style.display = 'block';
+                }
+                return;
+            }
+
+            if (input) input.classList.remove('ft-input-error');
+            if (errorMsg) errorMsg.style.display = 'none';
+
+            if (submitBtn) submitBtn.disabled = true;
+            if (submitText) submitText.textContent = 'Wird gesendet...';
+
+            fetch(WEBHOOK_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json, text/plain, */*'
+                },
+                body: JSON.stringify({
+                    whatsapp: rawValue
+                })
+            })
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Server returned status: ' + response.status);
+                }
+                return response.text();
+            })
+            .then(function() {
+                if (modalBody) {
+                    modalBody.innerHTML = `
+                        <div class="ft-success-box">
+                            <div class="ft-success-icon">✅</div>
+                            <h3 class="ft-success-title">Erfolgreich!</h3>
+                            <p class="ft-success-text">Bitte überprüfen Sie Ihr WhatsApp. Ihre Testdaten werden in Kürze gesendet.</p>
+                            <button type="button" class="ft-submit-btn ft-success-close-btn" id="ftSuccessCloseBtn">
+                                Schließen
+                            </button>
+                        </div>
+                    `;
+                    const sClose = document.getElementById('ftSuccessCloseBtn');
+                    if (sClose) sClose.addEventListener('click', closeModal);
+                }
+            })
+            .catch(function(err) {
+                console.error('Free trial submission error:', err);
+                if (errorMsg) {
+                    errorMsg.textContent = 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.';
+                    errorMsg.style.display = 'block';
+                }
+                if (input) input.classList.add('ft-input-error');
+                if (submitBtn) submitBtn.disabled = false;
+                if (submitText) submitText.textContent = 'Jetzt Testdaten erhalten';
+            });
+        });
+    }
+
+    if (input) {
+        input.addEventListener('input', function() {
+            if (input.classList.contains('ft-input-error')) {
+                input.classList.remove('ft-input-error');
+            }
+            if (errorMsg && errorMsg.style.display === 'block') {
+                errorMsg.style.display = 'none';
+            }
+        });
+    }
+})();
+</script>
