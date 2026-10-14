@@ -260,7 +260,7 @@ get_header();
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
                             <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
                         </svg>
-                        <span>JETZT TARIFE ANSEHEN</span>
+                        <span>JETZT PAKETE ANSEHEN</span>
                     </a>
                 </div>
 
@@ -340,13 +340,13 @@ get_header();
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
                 </svg>
-                <span>IPTV DEUTSCHLAND TARIFE</span>
+                <span>PREMIUM IPTV ABONNEMENTS</span>
             </div>
             <h2 class="text-3xl sm:text-4xl font-semibold text-black tracking-tight">
-                Wählen Sie Ihren passenden IPTV Tarif
+                Wählen Sie Ihr passendes IPTV-Paket
             </h2>
             <p class="mt-2 text-base sm:text-lg font-normal text-gray-800">
-                Alle Tarife mit über 25.000 Live-Sendern, 4K Streaming und schneller Aktivierung in unter 5 Minuten. Keine versteckten Kosten.
+                Alle Abonnements mit über 25.000 Live-Sendern, brillantem 4K-Streaming und Express-Freischaltung in unter 5 Minuten. Garantiert ohne versteckte Kosten.
             </p>
         </div>
 
@@ -364,301 +364,317 @@ get_header();
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 max-w-[95rem] mx-auto w-full items-stretch pt-4">
             
             <!-- Card 1: 1 Monat (Premium Dark UI) -->
-            <div class="bg-gray-900 rounded-2xl border border-gray-800 px-6 sm:px-8 py-12 sm:py-14 min-h-[640px] flex flex-col justify-between shadow-xl relative overflow-hidden group transition-all duration-300 hover:bg-[#252525] hover:-translate-y-2 hover:shadow-2xl hover:border hover:border-red-600">
+            <div class="bg-gray-900 rounded-2xl border border-gray-800 px-6 sm:px-8 py-10 sm:py-12 min-h-[640px] flex flex-col justify-between shadow-xl relative overflow-hidden group transition-all duration-300 hover:bg-[#252525] hover:-translate-y-2 hover:shadow-2xl hover:border hover:border-red-600">
                 <div>
-                    <div class="text-xs font-medium text-[#DD0000] uppercase tracking-wider mb-1">Hochleistungs-Server</div>
-                    <h3 class="text-2xl font-semibold text-white">1 Monat</h3>
+                    <!-- Card Header (Centered & Dominant) -->
+                    <div class="text-center pt-2 pb-1">
+                        <div class="text-xs font-bold text-[#DD0000] uppercase tracking-widest mb-2 text-center">Hochleistungs-Server</div>
+                        <h3 class="text-3xl sm:text-4xl lg:text-[2.6rem] font-black text-white tracking-tight leading-none text-center">1 Monat</h3>
+                    </div>
                     
-                    <!-- Red Price Pill -->
-                    <div class="my-6 -ml-6 sm:-ml-8 mr-2 bg-[#DD0000] text-white py-3.5 px-4 sm:px-6 rounded-r-full shadow-md flex flex-row items-baseline justify-center gap-1.5">
-                        <span id="price-card-1" class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-none">19</span>
+                    <!-- Red Price Pill (Centered) -->
+                    <div class="my-6 bg-[#DD0000] text-white py-3.5 px-6 rounded-full shadow-md flex flex-row items-baseline justify-center gap-1.5">
+                        <span id="price-card-1" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-none">19</span>
                         <span class="text-lg sm:text-xl font-bold text-white leading-none">€</span>
                     </div>
 
                     <!-- Features List -->
-                    <ul class="space-y-5 text-sm font-normal text-gray-300">
+                    <ul class="space-y-4 sm:space-y-4.5 text-sm font-normal text-gray-300">
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>4K Ultra HD Streaming Qualität</span>
+                            <span>Brillante 4K Ultra HD & Full HD Qualität</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>25.000+ Live-Sender weltweit</span>
+                            <span>Über 25.000 weltweite Live-TV-Sender</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>120.000+ Filme & Serien (VOD)</span>
+                            <span>Über 120.000 Filme & Serien auf Abruf (VOD)</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Alle Premium Sport- & PPV-Events</span>
+                            <span>Alle Premium-Sportkanäle & Live-PPV inklusive</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Anti-Freeze-Technologie 9.0</span>
+                            <span>Pufferfreies Streaming mit Anti-Freeze™ 9.0</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Smart EPG & Catch-Up TV</span>
+                            <span>Elektronischer Programmführer (EPG) & Catch-Up</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>24/7 Deutscher Support</span>
+                            <span>24/7 deutschsprachiger Kundenservice</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Multi-Geräte Kompatibilität</span>
+                            <span>Kompatibel mit allen gängigen Smart-Geräten</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Regular Button (Transparent with Red border) -->
                 <div class="mt-8">
-                    <a href="/checkout?plan=1-monat" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
-                        TARIF WÄHLEN +
+                    <a href="/checkout?plan=1-monat" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
+                        <span>Paket auswählen</span>
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
 
             <!-- Card 2: 3 Monate (Premium Dark UI) -->
-            <div class="bg-gray-900 rounded-2xl border border-gray-800 px-6 sm:px-8 py-12 sm:py-14 min-h-[640px] flex flex-col justify-between shadow-xl relative overflow-hidden group transition-all duration-300 hover:bg-[#252525] hover:-translate-y-2 hover:shadow-2xl hover:border hover:border-red-600">
+            <div class="bg-gray-900 rounded-2xl border border-gray-800 px-6 sm:px-8 py-10 sm:py-12 min-h-[640px] flex flex-col justify-between shadow-xl relative overflow-hidden group transition-all duration-300 hover:bg-[#252525] hover:-translate-y-2 hover:shadow-2xl hover:border hover:border-red-600">
                 <div>
-                    <div class="text-xs font-medium text-[#DD0000] uppercase tracking-wider mb-1">Hochleistungs-Server</div>
-                    <h3 class="text-2xl font-semibold text-white">3 Monate</h3>
+                    <!-- Card Header (Centered & Dominant) -->
+                    <div class="text-center pt-2 pb-1">
+                        <div class="text-xs font-bold text-[#DD0000] uppercase tracking-widest mb-2 text-center">Hochleistungs-Server</div>
+                        <h3 class="text-3xl sm:text-4xl lg:text-[2.6rem] font-black text-white tracking-tight leading-none text-center">3 Monate</h3>
+                    </div>
                     
-                    <!-- Red Price Pill -->
-                    <div class="my-6 -ml-6 sm:-ml-8 mr-2 bg-[#DD0000] text-white py-3.5 px-4 sm:px-6 rounded-r-full shadow-md flex flex-row items-baseline justify-center gap-1.5">
-                        <span id="price-card-2" class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-none">29</span>
+                    <!-- Red Price Pill (Centered) -->
+                    <div class="my-6 bg-[#DD0000] text-white py-3.5 px-6 rounded-full shadow-md flex flex-row items-baseline justify-center gap-1.5">
+                        <span id="price-card-2" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-none">29</span>
                         <span class="text-lg sm:text-xl font-bold text-white leading-none">€</span>
                     </div>
 
                     <!-- Features List -->
-                    <ul class="space-y-5 text-sm font-normal text-gray-300">
+                    <ul class="space-y-4 sm:space-y-4.5 text-sm font-normal text-gray-300">
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>4K Ultra HD Streaming Qualität</span>
+                            <span>Brillante 4K Ultra HD & Full HD Qualität</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>25.000+ Live-Sender weltweit</span>
+                            <span>Über 25.000 weltweite Live-TV-Sender</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>120.000+ Filme & Serien (VOD)</span>
+                            <span>Über 120.000 Filme & Serien auf Abruf (VOD)</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Alle Premium Sport- & PPV-Events</span>
+                            <span>Alle Premium-Sportkanäle & Live-PPV inklusive</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Anti-Freeze-Technologie 9.0</span>
+                            <span>Pufferfreies Streaming mit Anti-Freeze™ 9.0</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Smart EPG & Catch-Up TV</span>
+                            <span>Elektronischer Programmführer (EPG) & Catch-Up</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>24/7 Deutscher Support</span>
+                            <span>24/7 deutschsprachiger Kundenservice</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Multi-Geräte Kompatibilität</span>
+                            <span>Kompatibel mit allen gängigen Smart-Geräten</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Regular Button (Transparent with Red border) -->
                 <div class="mt-8">
-                    <a href="/checkout?plan=3-monate" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
-                        TARIF WÄHLEN +
+                    <a href="/checkout?plan=3-monate" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
+                        <span>Paket auswählen</span>
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
 
             <!-- Card 3: 6 Monate (Premium Dark UI) -->
-            <div class="bg-gray-900 rounded-2xl border border-gray-800 px-6 sm:px-8 py-12 sm:py-14 min-h-[640px] flex flex-col justify-between shadow-xl relative overflow-hidden group transition-all duration-300 hover:bg-[#252525] hover:-translate-y-2 hover:shadow-2xl hover:border hover:border-red-600">
+            <div class="bg-gray-900 rounded-2xl border border-gray-800 px-6 sm:px-8 py-10 sm:py-12 min-h-[640px] flex flex-col justify-between shadow-xl relative overflow-hidden group transition-all duration-300 hover:bg-[#252525] hover:-translate-y-2 hover:shadow-2xl hover:border hover:border-red-600">
                 <div>
-                    <div class="text-xs font-medium text-[#DD0000] uppercase tracking-wider mb-1">Hochleistungs-Server</div>
-                    <h3 class="text-2xl font-semibold text-white">6 Monate</h3>
+                    <!-- Card Header (Centered & Dominant) -->
+                    <div class="text-center pt-2 pb-1">
+                        <div class="text-xs font-bold text-[#DD0000] uppercase tracking-widest mb-2 text-center">Hochleistungs-Server</div>
+                        <h3 class="text-3xl sm:text-4xl lg:text-[2.6rem] font-black text-white tracking-tight leading-none text-center">6 Monate</h3>
+                    </div>
                     
-                    <!-- Red Price Pill -->
-                    <div class="my-6 -ml-6 sm:-ml-8 mr-2 bg-[#DD0000] text-white py-3.5 px-4 sm:px-6 rounded-r-full shadow-md flex flex-row items-baseline justify-center gap-1.5">
-                        <span id="price-card-3" class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-none">49</span>
+                    <!-- Red Price Pill (Centered) -->
+                    <div class="my-6 bg-[#DD0000] text-white py-3.5 px-6 rounded-full shadow-md flex flex-row items-baseline justify-center gap-1.5">
+                        <span id="price-card-3" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-none">49</span>
                         <span class="text-lg sm:text-xl font-bold text-white leading-none">€</span>
                     </div>
 
                     <!-- Features List -->
-                    <ul class="space-y-5 text-sm font-normal text-gray-300">
+                    <ul class="space-y-4 sm:space-y-4.5 text-sm font-normal text-gray-300">
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>4K Ultra HD Streaming Qualität</span>
+                            <span>Brillante 4K Ultra HD & Full HD Qualität</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>25.000+ Live-Sender weltweit</span>
+                            <span>Über 25.000 weltweite Live-TV-Sender</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>120.000+ Filme & Serien (VOD)</span>
+                            <span>Über 120.000 Filme & Serien auf Abruf (VOD)</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Alle Premium Sport- & PPV-Events</span>
+                            <span>Alle Premium-Sportkanäle & Live-PPV inklusive</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Anti-Freeze-Technologie 9.0</span>
+                            <span>Pufferfreies Streaming mit Anti-Freeze™ 9.0</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Smart EPG & Catch-Up TV</span>
+                            <span>Elektronischer Programmführer (EPG) & Catch-Up</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>24/7 Deutscher Support</span>
+                            <span>24/7 deutschsprachiger Kundenservice</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="w-4 h-4 rounded bg-gray-800 border border-gray-700 flex items-center justify-center shrink-0 text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Multi-Geräte Kompatibilität</span>
+                            <span>Kompatibel mit allen gängigen Smart-Geräten</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Regular Button (Transparent with Red border) -->
                 <div class="mt-8">
-                    <a href="/checkout?plan=6-monate" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
-                        TARIF WÄHLEN +
+                    <a href="/checkout?plan=6-monate" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
+                        <span>Paket auswählen</span>
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
 
             <!-- Card 4: 12 Monate (HIGHLIGHTED CARD: Pure White, Gold Badge, Scale-105) -->
-            <div class="bg-white rounded-2xl border-2 border-[#DD0000] px-6 sm:px-8 py-12 sm:py-14 min-h-[640px] flex flex-col justify-between shadow-2xl relative transform xl:scale-105 z-10 group transition-all duration-300 hover:scale-[1.05] hover:shadow-2xl hover:border-red-600">
+            <div class="bg-white rounded-2xl border-2 border-[#DD0000] px-6 sm:px-8 py-10 sm:py-12 min-h-[640px] flex flex-col justify-between shadow-2xl relative transform xl:scale-105 z-10 group transition-all duration-300 hover:scale-[1.05] hover:shadow-2xl hover:border-red-600">
                 
-                <!-- Bester Preis Badge (Gold/Yellow #FFCE00) - Combined & Non-overlapping -->
+                <!-- Bester Preis Badge (Gold/Yellow #FFCE00) - Centered & Non-overlapping -->
                 <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
-                    <span class="bg-[#FFCE00] text-black text-xs font-semibold px-5 py-1.5 rounded-full uppercase tracking-wider whitespace-nowrap shadow-sm border border-yellow-400">
+                    <span class="bg-[#FFCE00] text-black text-xs font-bold px-5 py-1.5 rounded-full uppercase tracking-wider whitespace-nowrap shadow-md border border-yellow-400">
                         BESTER PREIS
                     </span>
                 </div>
 
                 <div>
-                    <div class="text-xs font-medium text-[#DD0000] uppercase tracking-wider mb-1 mt-1">Hochleistungs-Server</div>
-                    <h3 class="text-2xl font-semibold text-gray-900">12 Monate</h3>
+                    <!-- Card Header (Centered & Dominant) -->
+                    <div class="text-center pt-2 pb-1">
+                        <div class="text-xs font-bold text-[#DD0000] uppercase tracking-widest mb-2 text-center">Hochleistungs-Server</div>
+                        <h3 class="text-3xl sm:text-4xl lg:text-[2.6rem] font-black text-gray-950 tracking-tight leading-none text-center">12 Monate</h3>
+                    </div>
                     
-                    <!-- Red Price Pill (Inside White Card) -->
-                    <div class="my-6 -ml-6 sm:-ml-8 mr-2 bg-[#DD0000] text-white py-3.5 px-4 sm:px-6 rounded-r-full shadow-md flex flex-row items-baseline justify-center gap-1.5">
-                        <span id="price-card-4" class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-none">75</span>
+                    <!-- Red Price Pill (Centered) -->
+                    <div class="my-6 bg-[#DD0000] text-white py-3.5 px-6 rounded-full shadow-md flex flex-row items-baseline justify-center gap-1.5">
+                        <span id="price-card-4" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-none">75</span>
                         <span class="text-lg sm:text-xl font-bold text-white leading-none">€</span>
                     </div>
 
-                    <!-- Features List (Dark text text-gray-700 with Red Checkmarks) -->
-                    <ul class="space-y-5 text-sm font-normal text-gray-700">
-                        <li class="flex items-center gap-3 font-medium text-gray-900">
+                    <!-- Features List (Dark text text-gray-800 with Red Checkmarks) -->
+                    <ul class="space-y-4 sm:space-y-4.5 text-sm font-normal text-gray-800">
+                        <li class="flex items-center gap-3 font-medium text-gray-950">
                             <span class="w-4 h-4 rounded bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-[#DD0000]">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>4K Ultra HD Streaming Qualität</span>
+                            <span>Brillante 4K Ultra HD & Full HD Qualität</span>
                         </li>
-                        <li class="flex items-center gap-3 font-medium text-gray-900">
+                        <li class="flex items-center gap-3 font-medium text-gray-950">
                             <span class="w-4 h-4 rounded bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-[#DD0000]">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>25.000+ Live-Sender weltweit</span>
+                            <span>Über 25.000 weltweite Live-TV-Sender</span>
                         </li>
-                        <li class="flex items-center gap-3 font-medium text-gray-900">
+                        <li class="flex items-center gap-3 font-medium text-gray-950">
                             <span class="w-4 h-4 rounded bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-[#DD0000]">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>120.000+ Filme & Serien (VOD)</span>
+                            <span>Über 120.000 Filme & Serien auf Abruf (VOD)</span>
                         </li>
-                        <li class="flex items-center gap-3 font-medium text-gray-900">
+                        <li class="flex items-center gap-3 font-medium text-gray-950">
                             <span class="w-4 h-4 rounded bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-[#DD0000]">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Alle Premium Sport- & PPV-Events</span>
+                            <span>Alle Premium-Sportkanäle & Live-PPV inklusive</span>
                         </li>
-                        <li class="flex items-center gap-3 font-medium text-gray-900">
+                        <li class="flex items-center gap-3 font-medium text-gray-950">
                             <span class="w-4 h-4 rounded bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-[#DD0000]">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Anti-Freeze-Technologie 9.0</span>
+                            <span>Pufferfreies Streaming mit Anti-Freeze™ 9.0</span>
                         </li>
-                        <li class="flex items-center gap-3 font-medium text-gray-900">
+                        <li class="flex items-center gap-3 font-medium text-gray-950">
                             <span class="w-4 h-4 rounded bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-[#DD0000]">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Smart EPG & Catch-Up TV</span>
+                            <span>Elektronischer Programmführer (EPG) & Catch-Up</span>
                         </li>
-                        <li class="flex items-center gap-3 text-[#DD0000] font-semibold">
+                        <li class="flex items-center gap-3 text-[#DD0000] font-bold">
                             <span class="w-4 h-4 rounded bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-[#DD0000]">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>24/7 Prioritäts-Support (Deutsch)</span>
+                            <span>24/7 Prioritäts-Kundenservice auf Deutsch</span>
                         </li>
-                        <li class="flex items-center gap-3 font-medium text-gray-900">
+                        <li class="flex items-center gap-3 font-medium text-gray-950">
                             <span class="w-4 h-4 rounded bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-[#DD0000]">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            <span>Multi-Geräte Kompatibilität</span>
+                            <span>Kompatibel mit allen gängigen Smart-Geräten</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Highlighted Button (Solid Red) -->
                 <div class="mt-8">
-                    <a href="/checkout?plan=12-monate" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider text-white bg-[#DD0000] hover:bg-[#b80000] transition-all shadow-md">
-                        TARIF WÄHLEN +
+                    <a href="/checkout?plan=12-monate" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold text-white bg-[#DD0000] hover:bg-[#b80000] transition-all shadow-md group-hover:shadow-lg">
+                        <span>Jetzt buchen</span>
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
@@ -861,9 +877,9 @@ get_header();
                             <path d="M15 14.5l1.5 1.5 3-3"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">1. Tarif wählen</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">1. Paket auswählen</h3>
                     <p class="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
-                        Wähle aus unseren Premium-Paketen und spare beim 12-Monats-Tarif.
+                        Wählen Sie aus unseren flexiblen Laufzeiten und sichern Sie sich maximale Ersparnis mit dem 12-Monats-Paket.
                     </p>
                 </div>
 
@@ -876,9 +892,9 @@ get_header();
                             <path d="M9 12l2 2 4-4"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">2. Sicher Bezahlen</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">2. Sicher bezahlen</h3>
                     <p class="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
-                        Schließe deine Bestellung sicher und verschlüsselt in Sekunden ab.
+                        Schließen Sie Ihre Bestellung sicher und verschlüsselt in wenigen Augenblicken ab.
                     </p>
                 </div>
 
@@ -893,9 +909,9 @@ get_header();
                             <path d="M12 18v3"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">3. Sofort Streamen!</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">3. Sofort streamen!</h3>
                     <p class="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
-                        Erhalte deine Zugangsdaten per E-Mail und starte sofort auf deinem Lieblingsgerät.
+                        Erhalten Sie Ihre Zugangsdaten per E-Mail und starten Sie sofort auf Ihrem Lieblingsgerät.
                     </p>
                 </div>
 
@@ -1140,7 +1156,7 @@ get_header();
                 </div>
                 <div>
                     <a href="/pricing-page" class="inline-flex items-center justify-center mt-6 px-6 py-3 bg-[#DD0000] hover:bg-red-700 text-white font-medium rounded-lg transition-colors shadow-sm">
-                        <span>Jetzt Tarif wählen</span>
+                        <span>Jetzt Paket auswählen</span>
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
@@ -1852,7 +1868,7 @@ get_header();
                         <div class="text-3xl font-black text-gray-900 tracking-tight">29 € <span class="text-sm font-semibold text-gray-500">/ 3 Monate</span></div>
                     </div>
                     <a href="/pricing-page" class="inline-flex items-center justify-center bg-[#DD0000] hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-colors whitespace-nowrap shadow-md hover:shadow-lg">
-                        TARIFE WÄHLEN
+                        PAKET AUSWÄHLEN
                     </a>
                 </div>
             </div>

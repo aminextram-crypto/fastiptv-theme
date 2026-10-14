@@ -112,9 +112,9 @@ get_header();
             <!-- ========================================================= -->
             <div class="lg:col-span-5 order-first lg:order-last space-y-6 lg:sticky lg:top-28">
 
-                <!-- Tarif wählen Card -->
+                <!-- Paket auswählen Card -->
                 <div class="checkout-card bg-white rounded-2xl border border-[#eaeaea] p-6 sm:p-7">
-                    <h3 class="font-bold text-gray-900 text-lg mb-5">Tarif wählen</h3>
+                    <h3 class="font-bold text-gray-900 text-lg mb-5">Paket auswählen</h3>
 
                     <!-- Plan Selection Grid (2x2) -->
                     <div class="grid grid-cols-2 gap-3" id="checkout-plan-selector">
