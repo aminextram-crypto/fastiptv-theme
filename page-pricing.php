@@ -115,7 +115,7 @@ get_header();
 
                 <!-- Regular Button -->
                 <div class="mt-8">
-                    <a href="#order" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
+                    <a href="/checkout?plan=1-monat" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
                         TARIF WÄHLEN +
                     </a>
                 </div>
@@ -188,7 +188,7 @@ get_header();
 
                 <!-- Regular Button -->
                 <div class="mt-8">
-                    <a href="#order" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
+                    <a href="/checkout?plan=3-monate" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
                         TARIF WÄHLEN +
                     </a>
                 </div>
@@ -261,7 +261,7 @@ get_header();
 
                 <!-- Regular Button -->
                 <div class="mt-8">
-                    <a href="#order" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
+                    <a href="/checkout?plan=6-monate" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm">
                         TARIF WÄHLEN +
                     </a>
                 </div>
@@ -339,7 +339,7 @@ get_header();
 
                 <!-- Highlighted Button (Solid Red) -->
                 <div class="mt-8">
-                    <a href="#order" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider text-white bg-[#DD0000] hover:bg-[#b80000] transition-all shadow-md">
+                    <a href="/checkout?plan=12-monate" class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-lg text-xs font-semibold uppercase tracking-wider text-white bg-[#DD0000] hover:bg-[#b80000] transition-all shadow-md">
                         TARIF WÄHLEN +
                     </a>
                 </div>

@@ -131,6 +131,12 @@ if ( in_array( $request_uri, [ '/pricing', '/tarife', '/preise', '/pricing-page'
     return;
 }
 
+// Route checkout templates
+if ( in_array( $request_uri, [ '/checkout', '/checkout.php', '/page-checkout.php', '/kasse', '/bestellen' ], true ) ) {
+    require __DIR__ . '/page-checkout.php';
+    return;
+}
+
 // Route 24h Free Trial templates
 if ( in_array( $request_uri, [ '/free-trial', '/free-trial.php', '/page-free-trial.php', '/test', '/testen' ], true ) ) {
     require __DIR__ . '/page-free-trial.php';
