@@ -516,7 +516,7 @@ function handleTrialSubmit(e) {
     if (submitBtn) submitBtn.disabled = true;
     if (submitText) submitText.textContent = 'Wird gesendet...';
     
-    fetch('https://n8n.playxtram.store/webhook-test/free-trial-request', {
+    fetch('https://n8n.playxtram.store/webhook/free-trial-request', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
