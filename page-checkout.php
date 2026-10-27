@@ -467,7 +467,7 @@ get_header();
     'use strict';
 
     // Webhook URL
-    const WEBHOOK_URL = 'https://n8n.playxtram.store/webhook-test/geramny-pay';
+    const WEBHOOK_URL = 'https://n8n.playxtram.store/webhook/geramny-pay';
 
     // DOM Elements
     const form = document.getElementById('german-checkout-form');
