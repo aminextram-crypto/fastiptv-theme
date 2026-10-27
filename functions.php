@@ -88,6 +88,57 @@ add_action(
 );
 
 /**
+ * Ensure custom theme routes (/checkout/, /iptv-tarife-germany/, etc.) resolve to their
+ * dedicated theme templates even if the WordPress page slug or template assignment differs.
+ */
+add_filter(
+    'template_include',
+    function( $template ) {
+        $request_path = isset( $_SERVER['REQUEST_URI'] ) ? parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ) : '';
+        $normalized   = $request_path !== '/' ? rtrim( (string) $request_path, '/' ) : '/';
+
+        $route_map = array(
+            '/checkout'                                           => 'page-checkout.php',
+            '/kasse'                                              => 'page-checkout.php',
+            '/bestellen'                                          => 'page-checkout.php',
+            '/iptv-tarife-germany'                                => 'page-pricing.php',
+            '/pricing'                                            => 'page-pricing.php',
+            '/pricing-page'                                       => 'page-pricing.php',
+            '/tarife'                                             => 'page-pricing.php',
+            '/24h-iptv-kostenlos-testen-premium-testzugang'       => 'page-free-trial.php',
+            '/free-trial'                                         => 'page-free-trial.php',
+            '/installationsanleitung'                             => 'page-installation.php',
+            '/installation'                                       => 'page-installation.php',
+            '/dmca-hinweis'                                       => 'page-dmca.php',
+            '/dmca'                                               => 'page-dmca.php',
+            '/kontakt-support-premium-iptv-kundenservice'         => 'page-contact.php',
+            '/contact'                                            => 'page-contact.php',
+            '/iptv-faq-hilfe-haufig-gestellte-fragen'             => 'page-faq.php',
+            '/faq'                                                => 'page-faq.php',
+            '/agb-nutzungsbedingungen-premium-iptv'               => 'page-terms.php',
+            '/datenschutzerklarung-sicherheit-fur-ihre-daten'     => 'page-privacy.php',
+            '/geld-zuruck-garantie-ruckerstattung-premium-iptv'   => 'page-refund.php',
+            '/haftungsausschluss-disclaimer-premium-iptv'         => 'page-disclaimer.php',
+        );
+
+        if ( isset( $route_map[ $normalized ] ) ) {
+            $custom_template = get_template_directory() . '/' . $route_map[ $normalized ];
+            if ( file_exists( $custom_template ) ) {
+                global $wp_query;
+                if ( isset( $wp_query ) && is_object( $wp_query ) ) {
+                    $wp_query->is_404 = false;
+                }
+                status_header( 200 );
+                return $custom_template;
+            }
+        }
+
+        return $template;
+    },
+    99
+);
+
+/**
  * Enqueue scripts and styles with Inter Google Font and German Brand Color Palette.
  */
 function fast_iptv_scripts() {

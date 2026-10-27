@@ -10,9 +10,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Allow direct serving of static files (css, js, images)
 $request_uri = parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH );
-if ( $request_uri !== '/' && file_exists( __DIR__ . $request_uri ) ) {
+if ( $request_uri !== '/' && is_file( __DIR__ . $request_uri ) ) {
     return false;
 }
+
+// On localhost preview, rewrite hardcoded production domain links (https://deutschkaufeniptv.de/)
+// to local relative paths (/) so clicking navbar/CTA links stays on localhost:8000.
+ob_start(
+    function( $buffer ) {
+        return str_replace(
+            array(
+                'href="https://deutschkaufeniptv.de/',
+                "href='https://deutschkaufeniptv.de/",
+            ),
+            array(
+                'href="/',
+                "href='/",
+            ),
+            $buffer
+        );
+    }
+);
 
 // Minimal WordPress helper functions for previewing without full WP installation
 if ( ! function_exists( 'language_attributes' ) ) {
@@ -141,61 +159,61 @@ if ( in_array( $normalized_uri, [ '/checkout', '/checkout.php', '/page-checkout.
 }
 
 // Route 24h Free Trial templates
-if ( in_array( $request_uri, [ '/free-trial', '/free-trial.php', '/page-free-trial.php', '/test', '/testen' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/free-trial', '/free-trial.php', '/page-free-trial.php', '/test', '/testen', '/24h-iptv-kostenlos-testen-premium-testzugang' ], true ) ) {
     require __DIR__ . '/page-free-trial.php';
     return;
 }
 
 // Route blog templates
-if ( in_array( $request_uri, [ '/blog', '/blog.php', '/page-blog.php' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/blog', '/blog.php', '/page-blog.php' ], true ) ) {
     require __DIR__ . '/page-blog.php';
     return;
 }
 
 // Route contact templates
-if ( in_array( $request_uri, [ '/contact', '/contact.php', '/page-contact.php', '/contact-us', '/kontakt' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/contact', '/contact.php', '/page-contact.php', '/contact-us', '/kontakt', '/kontakt-support-premium-iptv-kundenservice' ], true ) ) {
     require __DIR__ . '/page-contact.php';
     return;
 }
 
 // Route FAQ templates
-if ( in_array( $request_uri, [ '/faq', '/faq.php', '/page-faq.php', '/faq-page', '/faq-page.php' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/faq', '/faq.php', '/page-faq.php', '/faq-page', '/faq-page.php', '/iptv-faq-hilfe-haufig-gestellte-fragen' ], true ) ) {
     require __DIR__ . '/page-faq.php';
     return;
 }
 
 // Route installation guide templates
-if ( in_array( $request_uri, [ '/installation', '/installation.php', '/page-installation.php', '/installation-page', '/installation-page.php', '/anleitung' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/installation', '/installation.php', '/page-installation.php', '/installation-page', '/installation-page.php', '/anleitung', '/installationsanleitung' ], true ) ) {
     require __DIR__ . '/page-installation.php';
     return;
 }
 
 // Route DMCA templates
-if ( in_array( $request_uri, [ '/dmca', '/dmca.php', '/page-dmca.php', '/dmca-page', '/dmca-page.php' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/dmca', '/dmca.php', '/page-dmca.php', '/dmca-page', '/dmca-page.php', '/dmca-hinweis' ], true ) ) {
     require __DIR__ . '/page-dmca.php';
     return;
 }
 
 // Route Terms & Conditions templates
-if ( in_array( $request_uri, [ '/terms', '/terms.php', '/page-terms.php', '/agb' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/terms', '/terms.php', '/page-terms.php', '/agb', '/agb-nutzungsbedingungen-premium-iptv' ], true ) ) {
     require __DIR__ . '/terms.php';
     return;
 }
 
 // Route Privacy Policy templates
-if ( in_array( $request_uri, [ '/privacy', '/privacy.php', '/page-privacy.php', '/datenschutz' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/privacy', '/privacy.php', '/page-privacy.php', '/datenschutz', '/datenschutzerklarung-sicherheit-fur-ihre-daten' ], true ) ) {
     require __DIR__ . '/privacy.php';
     return;
 }
 
 // Route Refund Policy templates
-if ( in_array( $request_uri, [ '/refund', '/refund.php', '/page-refund.php', '/widerruf' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/refund', '/refund.php', '/page-refund.php', '/widerruf', '/geld-zuruck-garantie-ruckerstattung-premium-iptv' ], true ) ) {
     require __DIR__ . '/refund.php';
     return;
 }
 
 // Route Disclaimer templates
-if ( in_array( $request_uri, [ '/disclaimer', '/disclaimer.php', '/page-disclaimer.php', '/haftungsausschluss' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/disclaimer', '/disclaimer.php', '/page-disclaimer.php', '/haftungsausschluss', '/haftungsausschluss-disclaimer-premium-iptv' ], true ) ) {
     require __DIR__ . '/disclaimer.php';
     return;
 }

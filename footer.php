@@ -246,6 +246,22 @@ if ( ! defined( 'ABSPATH' ) ) {
     window.showDiscountPopup = showPopup;
     window.closeDiscountPopup = closePopup;
 })();
+
+// Safeguard: ensure all pricing card action buttons route directly to /checkout/
+(function() {
+    document.querySelectorAll('#preise a, a[href="/pricing-page"], a[href="#order"], a[href^="/checkout?"]').forEach(function(link) {
+        const text = (link.textContent || '').trim().toUpperCase();
+        if (
+            text.indexOf('TARIF WÄHLEN') !== -1 ||
+            text.indexOf('PAKET AUSWÄHLEN') !== -1 ||
+            text.indexOf('JETZT BUCHEN') !== -1 ||
+            link.getAttribute('href') === '/pricing-page' ||
+            link.getAttribute('href') === '#order'
+        ) {
+            link.setAttribute('href', '/checkout/');
+        }
+    });
+})();
 </script>
 
 <!-- Floating WhatsApp Support Button -->
