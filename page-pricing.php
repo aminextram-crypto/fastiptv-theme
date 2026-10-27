@@ -118,7 +118,7 @@ get_header();
 
                 <!-- Regular Button (Transparent with Red border) -->
                 <div class="mt-8">
-                    <a href="/checkout?plan=1-monat" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
+                    <a href="/checkout/" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
                         <span>Paket auswählen</span>
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
@@ -195,7 +195,7 @@ get_header();
 
                 <!-- Regular Button (Transparent with Red border) -->
                 <div class="mt-8">
-                    <a href="/checkout?plan=3-monate" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
+                    <a href="/checkout/" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
                         <span>Paket auswählen</span>
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
@@ -272,7 +272,7 @@ get_header();
 
                 <!-- Regular Button (Transparent with Red border) -->
                 <div class="mt-8">
-                    <a href="/checkout?plan=6-monate" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
+                    <a href="/checkout/" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold border-2 border-[#DD0000] text-[#DD0000] hover:bg-[#DD0000] hover:text-white transition-all shadow-sm group-hover:border-red-500">
                         <span>Paket auswählen</span>
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
@@ -357,7 +357,7 @@ get_header();
 
                 <!-- Highlighted Button (Solid Red) -->
                 <div class="mt-8">
-                    <a href="/checkout?plan=12-monate" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold text-white bg-[#DD0000] hover:bg-[#b80000] transition-all shadow-md group-hover:shadow-lg">
+                    <a href="/checkout/" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-sm font-bold text-white bg-[#DD0000] hover:bg-[#b80000] transition-all shadow-md group-hover:shadow-lg">
                         <span>Jetzt buchen</span>
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>

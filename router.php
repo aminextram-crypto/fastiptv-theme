@@ -125,14 +125,17 @@ if ( ! function_exists( 'get_template_directory_uri' ) ) {
     }
 }
 
+// Normalize trailing slash on route paths for local preview
+$normalized_uri = $request_uri !== '/' ? rtrim( $request_uri, '/' ) : '/';
+
 // Route pricing templates
-if ( in_array( $request_uri, [ '/pricing', '/tarife', '/preise', '/pricing-page', '/pricing-page.php', '/page-pricing.php' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/pricing', '/tarife', '/preise', '/pricing-page', '/pricing-page.php', '/page-pricing.php', '/iptv-tarife-germany' ], true ) ) {
     require __DIR__ . '/page-pricing.php';
     return;
 }
 
 // Route checkout templates
-if ( in_array( $request_uri, [ '/checkout', '/checkout.php', '/page-checkout.php', '/kasse', '/bestellen' ], true ) ) {
+if ( in_array( $normalized_uri, [ '/checkout', '/checkout.php', '/page-checkout.php', '/kasse', '/bestellen' ], true ) ) {
     require __DIR__ . '/page-checkout.php';
     return;
 }

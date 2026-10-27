@@ -45,9 +45,14 @@ add_action( 'after_setup_theme', 'fast_iptv_setup' );
  */
 function fast_iptv_replace_staging_domain( $value ) {
     if ( is_string( $value ) ) {
-        return str_replace(
+        $value = str_replace(
             array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ),
             'https://deutschkaufeniptv.de',
+            $value
+        );
+        $value = str_replace(
+            array( 'href="/pricing-page"', 'href="#order"' ),
+            'href="/checkout/"',
             $value
         );
     }
