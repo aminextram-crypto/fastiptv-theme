@@ -27,8 +27,8 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="col-span-1 md:col-span-2 lg:col-span-2">
             <!-- Logo -->
             <div class="mb-5">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="inline-block">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="DEUTSCH KAUFEN IPTV" class="h-9 sm:h-10 md:h-11 w-auto object-contain">
+                <a href="https://deutschkaufeniptv.de/" rel="home" class="inline-block">
+                    <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/logo.png" alt="DEUTSCH KAUFEN IPTV" class="h-9 sm:h-10 md:h-11 w-auto object-contain">
                 </a>
             </div>
             
@@ -49,12 +49,12 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div>
             <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-6">UNTERNEHMEN</h4>
             <nav class="space-y-1">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Startseite</a>
+                <a href="https://deutschkaufeniptv.de/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Startseite</a>
                 <a href="https://deutschkaufeniptv.de/iptv-tarife-germany/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Tarife</a>
                 <a href="https://deutschkaufeniptv.de/24h-iptv-kostenlos-testen-premium-testzugang/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Kostenloser 24h Test</a>
                 <a href="https://deutschkaufeniptv.de/blog/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Blog</a>
-                <a href="/about" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Über uns</a>
-                <a href="/reseller" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Reseller</a>
+                <a href="https://deutschkaufeniptv.de/about/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Über uns</a>
+                <a href="https://deutschkaufeniptv.de/reseller/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Reseller</a>
             </nav>
         </div>
 
@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <a href="https://deutschkaufeniptv.de/kontakt-support-premium-iptv-kundenservice/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Kontakt</a>
                 <a href="https://deutschkaufeniptv.de/installationsanleitung/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Installationsanleitung</a>
                 <a href="https://deutschkaufeniptv.de/iptv-faq-hilfe-haufig-gestellte-fragen/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">FAQ</a>
-                <a href="/help-center" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Hilfe-Center</a>
+                <a href="https://deutschkaufeniptv.de/help-center/" class="block mb-3 text-gray-400 hover:text-[#DD0000] hover:translate-x-1 transition-all duration-300 text-sm">Hilfe-Center</a>
             </nav>
         </div>
 

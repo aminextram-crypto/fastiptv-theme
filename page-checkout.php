@@ -444,7 +444,7 @@ get_header();
                                 <p>3. Nach Zahlungseingang erhalten Sie Ihre Zugangsdaten sofort per WhatsApp.</p>
                             </div>
 
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-flex items-center justify-center bg-black hover:bg-gray-800 text-white font-semibold py-3.5 px-8 rounded-xl transition-colors text-sm">
+                            <a href="https://deutschkaufeniptv.de/" class="inline-flex items-center justify-center bg-black hover:bg-gray-800 text-white font-semibold py-3.5 px-8 rounded-xl transition-colors text-sm">
                                 Zurück zur Startseite
                             </a>
                         </div>

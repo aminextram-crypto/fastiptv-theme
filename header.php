@@ -71,8 +71,8 @@ $is_faq_active          = in_array( $current_page_uri, array( '/faq', '/faq.php'
         
         <!-- Logo -->
         <div class="site-branding flex items-center">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="flex items-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="DEUTSCH KAUFEN IPTV" class="h-7 sm:h-8 md:h-9 w-auto object-contain">
+            <a href="https://deutschkaufeniptv.de/" rel="home" class="flex items-center">
+                <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/logo.png" alt="DEUTSCH KAUFEN IPTV" class="h-7 sm:h-8 md:h-9 w-auto object-contain">
             </a>
         </div>
 

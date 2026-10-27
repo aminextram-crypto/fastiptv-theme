@@ -256,7 +256,7 @@ get_header();
 
                 <!-- CTA -->
                 <div class="mt-7 w-full sm:w-auto">
-                    <a href="/pricing-page" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-4 rounded-lg text-sm font-bold uppercase tracking-widest text-white bg-[#DD0000] hover:bg-[#b80000] shadow-md hover:shadow-lg transition-all">
+                    <a href="https://deutschkaufeniptv.de/iptv-tarife-germany/" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-4 rounded-lg text-sm font-bold uppercase tracking-widest text-white bg-[#DD0000] hover:bg-[#b80000] shadow-md hover:shadow-lg transition-all">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
                             <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
                         </svg>
@@ -1155,7 +1155,7 @@ get_header();
                     </p>
                 </div>
                 <div>
-                    <a href="/pricing-page" class="inline-flex items-center justify-center mt-6 px-6 py-3 bg-[#DD0000] hover:bg-red-700 text-white font-medium rounded-lg transition-colors shadow-sm">
+                    <a href="https://deutschkaufeniptv.de/iptv-tarife-germany/" class="inline-flex items-center justify-center mt-6 px-6 py-3 bg-[#DD0000] hover:bg-red-700 text-white font-medium rounded-lg transition-colors shadow-sm">
                         <span>Jetzt Paket auswählen</span>
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -1194,7 +1194,7 @@ get_header();
             <!-- Card 1 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-family-tv.jpg" 
+                    <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/feature-family-tv.jpg" 
                          alt="Premium IPTV Deutschland" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1214,7 +1214,7 @@ get_header();
                         Erleben Sie gestochen scharfes 4K Ultra HD Streaming ohne Ruckeln.
                     </p>
                     <div class="mt-auto pt-6">
-                        <a href="/pricing-page" class="inline-block px-4 py-2 border border-gray-600 rounded text-gray-300 text-sm font-semibold uppercase tracking-wider group-hover:border-[#DD0000] group-hover:text-[#DD0000] transition-colors">
+                        <a href="https://deutschkaufeniptv.de/iptv-tarife-germany/" class="inline-block px-4 py-2 border border-gray-600 rounded text-gray-300 text-sm font-semibold uppercase tracking-wider group-hover:border-[#DD0000] group-hover:text-[#DD0000] transition-colors">
                             TARIFE
                         </a>
                     </div>
@@ -1224,7 +1224,7 @@ get_header();
             <!-- Card 2 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-cinema.jpg" 
+                    <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/feature-cinema.jpg" 
                          alt="Filme & Serien auf Abruf" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1249,7 +1249,7 @@ get_header();
                         Über 120.000 VODs, aktuelle Blockbuster und Serien jederzeit verfügbar.
                     </p>
                     <div class="mt-auto pt-6">
-                        <a href="/pricing-page" class="inline-block px-4 py-2 border border-gray-600 rounded text-gray-300 text-sm font-semibold uppercase tracking-wider group-hover:border-[#DD0000] group-hover:text-[#DD0000] transition-colors">
+                        <a href="https://deutschkaufeniptv.de/iptv-tarife-germany/" class="inline-block px-4 py-2 border border-gray-600 rounded text-gray-300 text-sm font-semibold uppercase tracking-wider group-hover:border-[#DD0000] group-hover:text-[#DD0000] transition-colors">
                             TARIFE
                         </a>
                     </div>
@@ -1259,7 +1259,7 @@ get_header();
             <!-- Card 3 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-football.jpg" 
+                    <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/feature-football.jpg" 
                          alt="25.000+ Live-Sender" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1279,7 +1279,7 @@ get_header();
                         Weltweites Fernsehen aus Deutschland, Österreich, Schweiz und mehr.
                     </p>
                     <div class="mt-auto pt-6">
-                        <a href="/pricing-page" class="inline-block px-4 py-2 border border-gray-600 rounded text-gray-300 text-sm font-semibold uppercase tracking-wider group-hover:border-[#DD0000] group-hover:text-[#DD0000] transition-colors">
+                        <a href="https://deutschkaufeniptv.de/iptv-tarife-germany/" class="inline-block px-4 py-2 border border-gray-600 rounded text-gray-300 text-sm font-semibold uppercase tracking-wider group-hover:border-[#DD0000] group-hover:text-[#DD0000] transition-colors">
                             TARIFE
                         </a>
                     </div>
@@ -1289,7 +1289,7 @@ get_header();
             <!-- Card 4 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-fans.jpg" 
+                    <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/feature-fans.jpg" 
                          alt="Live-Sport & Bundesliga" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1312,7 +1312,7 @@ get_header();
                         Verpassen Sie kein Spiel. Alle Ligen und PPV-Events in bester Qualität.
                     </p>
                     <div class="mt-auto pt-6">
-                        <a href="/pricing-page" class="inline-block px-4 py-2 border border-gray-600 rounded text-gray-300 text-sm font-semibold uppercase tracking-wider group-hover:border-[#DD0000] group-hover:text-[#DD0000] transition-colors">
+                        <a href="https://deutschkaufeniptv.de/iptv-tarife-germany/" class="inline-block px-4 py-2 border border-gray-600 rounded text-gray-300 text-sm font-semibold uppercase tracking-wider group-hover:border-[#DD0000] group-hover:text-[#DD0000] transition-colors">
                             TARIFE
                         </a>
                     </div>
@@ -1322,7 +1322,7 @@ get_header();
             <!-- Card 5 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-smart-tv.jpg" 
+                    <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/feature-smart-tv.jpg" 
                          alt="Einfache Einrichtung" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1352,7 +1352,7 @@ get_header();
             <!-- Card 6 -->
             <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-gray-600 relative group flex flex-col">
                 <div class="relative w-full h-48 overflow-hidden bg-gray-900">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature-support.jpg" 
+                    <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/feature-support.jpg" 
                          alt="24/7 Premium Support" 
                          class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" 
                          loading="lazy">
@@ -1683,7 +1683,7 @@ get_header();
 
     <!-- Left Background Image -->
     <div class="absolute top-0 left-0 w-full md:w-1/2 h-full z-0">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_7541fb.jpg" 
+        <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/image_7541fb.jpg" 
              alt="Deutsche Nationalmannschaft" 
              class="w-full h-full object-cover opacity-30 object-left" 
              loading="lazy">
@@ -1692,7 +1692,7 @@ get_header();
 
     <!-- Right Background Image -->
     <div class="absolute top-0 right-0 w-full md:w-1/2 h-full z-0">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_753d62.jpg" 
+        <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/image_753d62.jpg" 
              alt="WM Torjubel" 
              class="w-full h-full object-cover opacity-30 object-right" 
              loading="lazy">
@@ -1867,7 +1867,7 @@ get_header();
                         <span class="block text-sm text-gray-500 mb-0.5">Jetzt streamen ab</span>
                         <div class="text-3xl font-black text-gray-900 tracking-tight">29 € <span class="text-sm font-semibold text-gray-500">/ 3 Monate</span></div>
                     </div>
-                    <a href="/pricing-page" class="inline-flex items-center justify-center bg-[#DD0000] hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-colors whitespace-nowrap shadow-md hover:shadow-lg">
+                    <a href="https://deutschkaufeniptv.de/iptv-tarife-germany/" class="inline-flex items-center justify-center bg-[#DD0000] hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-colors whitespace-nowrap shadow-md hover:shadow-lg">
                         PAKET AUSWÄHLEN
                     </a>
                 </div>
@@ -1875,7 +1875,7 @@ get_header();
 
             <!-- Right Column (Clean Floating Transparent PNG - Desktop Only) -->
             <div class="hidden lg:flex relative items-center justify-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/your-transparent-sports-image.png" 
+                <img src="<?php echo esc_url( str_replace( array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ), 'https://deutschkaufeniptv.de', get_template_directory_uri() ) ); ?>/assets/images/your-transparent-sports-image.png" 
                      alt="Live Sports" 
                      class="hidden lg:block relative z-10 w-full max-w-2xl scale-110 mx-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
             </div>

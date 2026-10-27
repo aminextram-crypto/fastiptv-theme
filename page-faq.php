@@ -528,7 +528,7 @@ get_header();
                 </a>
 
                 <!-- Button 2: Contact Page -->
-                <a href="/contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-gray-900 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors shadow-sm">
+                <a href="https://deutschkaufeniptv.de/kontakt-support-premium-iptv-kundenservice/" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-gray-900 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors shadow-sm">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>

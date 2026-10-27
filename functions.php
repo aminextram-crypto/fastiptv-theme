@@ -38,6 +38,51 @@ endif;
 add_action( 'after_setup_theme', 'fast_iptv_setup' );
 
 /**
+ * Replace any old staging domain (iptv.playxtram.store) with the production domain (https://deutschkaufeniptv.de).
+ *
+ * @param mixed $value URL or HTML string to sanitize.
+ * @return mixed
+ */
+function fast_iptv_replace_staging_domain( $value ) {
+    if ( is_string( $value ) ) {
+        return str_replace(
+            array( 'https://iptv.playxtram.store', 'http://iptv.playxtram.store' ),
+            'https://deutschkaufeniptv.de',
+            $value
+        );
+    }
+    return $value;
+}
+
+$fast_iptv_url_filters = array(
+    'option_home',
+    'option_siteurl',
+    'home_url',
+    'site_url',
+    'content_url',
+    'plugins_url',
+    'theme_root_uri',
+    'template_directory_uri',
+    'stylesheet_directory_uri',
+    'stylesheet_uri',
+    'theme_file_uri',
+    'wp_get_attachment_url',
+    'the_content',
+    'widget_text',
+);
+
+foreach ( $fast_iptv_url_filters as $filter_name ) {
+    add_filter( $filter_name, 'fast_iptv_replace_staging_domain', 99 );
+}
+
+add_action(
+    'template_redirect',
+    function() {
+        ob_start( 'fast_iptv_replace_staging_domain' );
+    }
+);
+
+/**
  * Enqueue scripts and styles with Inter Google Font and German Brand Color Palette.
  */
 function fast_iptv_scripts() {

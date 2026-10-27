@@ -389,7 +389,7 @@ get_header();
         <!-- Additional Link to Full FAQ -->
         <div class="mt-12 text-center">
             <p class="text-sm text-gray-500 mb-3">Sie haben weitere technische Fragen oder möchten Tarife vergleichen?</p>
-            <a href="/faq" class="inline-flex items-center gap-2 text-sm font-bold text-[#DD0000] hover:text-[#b80000] transition-colors">
+            <a href="https://deutschkaufeniptv.de/iptv-faq-hilfe-haufig-gestellte-fragen/" class="inline-flex items-center gap-2 text-sm font-bold text-[#DD0000] hover:text-[#b80000] transition-colors">
                 <span>Alle 30 Fragen im FAQ-Center lesen</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
